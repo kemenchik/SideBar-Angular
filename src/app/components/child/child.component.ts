@@ -19,44 +19,7 @@ export class ChildComponent implements OnInit {
 
   maxCost;
   minCost;
-  stepCost;/*
-
-  changeBudget(changeType){
-    let input1Range = (<HTMLInputElement> document.getElementById('inputRange1')).value;
-    let input2Range = (<HTMLInputElement> document.getElementById('inputRange2')).value;
-
-    if(changeType == 1) {
-      if (input1Range > input2Range) {
-        (<HTMLInputElement> document.getElementById('inputRange2')).value = (<HTMLInputElement> document.getElementById('inputRange1')).value;
-        (<HTMLInputElement> document.getElementById('inputNum2')).value = (<HTMLInputElement> document.getElementById('inputRange2')).value;
-      }
-    } else if (changeType == 2)
-      if (input1Range > input2Range) {
-        (<HTMLInputElement> document.getElementById('inputRange1')).value = (<HTMLInputElement> document.getElementById('inputRange2')).value;
-        (<HTMLInputElement> document.getElementById('inputNum1')).value = (<HTMLInputElement> document.getElementById('inputRange1')).value;
-      }
-    (<HTMLInputElement> document.getElementById('inputNum1')).value = (<HTMLInputElement> document.getElementById('inputRange1')).value;
-    (<HTMLInputElement> document.getElementById('inputNum2')).value = (<HTMLInputElement> document.getElementById('inputRange2')).value;
-    this.inputCheckBudget.emit({from:Number.parseInt((<HTMLInputElement> document.getElementById('inputRange1')).value), to: Number.parseInt((<HTMLInputElement> document.getElementById('inputRange2')).value)});
-  }
-
-  changeWeather(changeType){
-    if(changeType == 1) {
-      if ((<HTMLInputElement> document.getElementById('inputRange3')).value > (<HTMLInputElement> document.getElementById('inputRange4')).value) {
-        (<HTMLInputElement> document.getElementById('inputRange4')).value = (<HTMLInputElement> document.getElementById('inputRange3')).value;
-        (<HTMLInputElement> document.getElementById('inputNum4')).value = (<HTMLInputElement> document.getElementById('inputRange4')).value;
-      }
-    }
-    else if (changeType == 2)
-      if ((<HTMLInputElement> document.getElementById('inputRange3')).value > (<HTMLInputElement> document.getElementById('inputRange4')).value) {
-        (<HTMLInputElement> document.getElementById('inputRange3')).value = (<HTMLInputElement> document.getElementById('inputRange4')).value;
-        (<HTMLInputElement> document.getElementById('inputNum3')).value = (<HTMLInputElement> document.getElementById('inputRange3')).value;
-      }
-    (<HTMLInputElement> document.getElementById('inputNum3')).value = (<HTMLInputElement> document.getElementById('inputRange3')).value;
-    (<HTMLInputElement> document.getElementById('inputNum4')).value = (<HTMLInputElement> document.getElementById('inputRange4')).value;
-    this.inputCheckWeather.emit({from:Number.parseInt((<HTMLInputElement> document.getElementById('inputRange3')).value), to: Number.parseInt((<HTMLInputElement> document.getElementById('inputRange4')).value)});
-  }*/
-
+  stepCost;
   @Output() onCheckTypes = new EventEmitter<number>();
   @Output() inputCheckBudget = new EventEmitter<{from:number, to:number}>();
   @Output() inputCheckWeather = new EventEmitter<{from:number, to:number}>();
