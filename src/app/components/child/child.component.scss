@@ -1,0 +1,69 @@
+.categories {
+  border: #ffd75d 2px solid;
+  width: 250px;
+  background-color: #ffecb3;
+}
+
+.hide,
+.hide + label ~ .type_chill,
+.hide + label ~ .budget,
+.hide + label ~ .visa,
+.hide + label ~ .weather,  {
+  display: none;
+}
+
+.hide + label,
+.hide.checked + label {
+  cursor: pointer;
+}
+
+.hide:checked + label + .type_chill,
+.hide:checked + label + .budget,
+.hide:checked + label + .visa,
+.hide:checked + label + .weather {
+  display: block;
+}
+
+.num_input {
+  width: 60px;
+}
+
+.slider {
+  cursor: pointer;
+
+  background-color: black;
+  box-sizing: border-box;
+}
+
+
+.thumb0,
+.thumb1 {
+  cursor: pointer;
+  border-color: #333;
+  border-style: solid;
+
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.track {
+  pointer-events: none;
+}
+
+.container {
+  position: relative;
+
+  margin: 15px auto 0;
+  width: 220px;
+}
+
+.mb-15{
+  margin-bottom: 15px;
+}
+
+
+
+
+
+

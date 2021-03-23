@@ -1,0 +1,7 @@
+<p>parent works!</p>
+<div *ngFor="let category of categoryList">
+  <div>{{category}}</div>
+</div>
+<div> Бюджет : {{budgetRange.from}} - {{budgetRange.to}}</div>
+<div> Погода : {{weatherRange.from}} - {{weatherRange.to}}</div>
+<app-child (onCheckTypes)="checkTypes($event)" (inputCheckWeather)="checkInputsWeather($event)" (inputCheckBudget)="checkInputsBudget($event)"></app-child>

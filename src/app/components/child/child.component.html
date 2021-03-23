@@ -1,0 +1,49 @@
+<p>Child :</p>
+<div class="categories">
+  <input class="hide" id="hd-1" type="checkbox">
+  <label for="hd-1">Тип отдыха</label>
+  <div class="type_chill">
+    <div><input type="checkbox" (click)="check(0)" class="chill_type">Все</div>
+    <div><input type="checkbox" (click)="check(1)" class="chill_type">Пляжный</div>
+    <div><input type="checkbox" (click)="check(2)" class="chill_type">Спортивный зимний</div>
+    <div><input type="checkbox" (click)="check(3)" class="chill_type">Спортивный летний</div>
+    <div><input type="checkbox" (click)="check(4)" class="chill_type">Городской/экскурс</div>
+    <div><input type="checkbox" (click)="check(5)" class="chill_type">СПА/лечебный</div>
+  </div>
+  <br>
+  <input class="hide" id="hd-2" type="checkbox" >
+  <label for="hd-2">Бюджет</label>
+  <div class="budget">
+    <div>От <input type="number" class="num_input" id="inputNum1" [defaultValue]="200000"> До
+      <input type="number" class="num_input" id="inputNum2" [defaultValue]="500000"></div>
+    <div class="container">
+      <div class="slider"></div>
+      <div class="thumb0"></div>
+      <div class="thumb0"></div>
+    </div>
+  </div>
+  <br>
+  <input class="hide" id="hd-3" type="checkbox" >
+  <label for="hd-3">Виза</label>
+  <div class="visa">
+    <div><input type="checkbox" (click)="check(6)" class="visa_type">Безвизовые</div>
+    <div><input type="checkbox" (click)="check(7)" class="visa_type">Онлайн</div>
+    <div><input type="checkbox" (click)="check(8)" class="visa_type">Оффлайн</div>
+    <div><input type="checkbox" (click)="check(9)" class="visa_type">По прилету</div>
+  </div>
+  <br>
+  <input class="hide" id="hd-4" type="checkbox" >
+  <label for="hd-4">Погода</label>
+  <div class="weather">
+    <div>От <input type="number" class="num_input" id="inputNum3" [defaultValue]="10">С
+      До <input type="number" class="num_input" id="inputNum4" [defaultValue]="30">С</div>
+    <div class="container">
+      <div class="slider mb-15"></div>
+      <div class="thumb1"></div>
+      <div class="thumb1"></div>
+    </div>
+  </div>
+</div>
+
+
+
